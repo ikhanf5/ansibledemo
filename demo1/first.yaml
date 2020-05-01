@@ -56,5 +56,4 @@
         snat: Automap
         profiles:
           - http
-          - clientssl
       delegate_to: localhost
