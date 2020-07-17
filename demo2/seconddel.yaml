@@ -9,7 +9,7 @@
 
   tasks:
 
-    - name: Delete a Virtual Server
+    - name: Delete Virtual Servers
       tags: 
         - virtual
       bigip_virtual_server:
@@ -19,7 +19,7 @@
       with_dict: "{{virtuals}}"
       delegate_to: localhost
 
-    - name: Add members to pool
+    - name: Delete pool members
       tags:
         - members
       bigip_pool_member:
@@ -33,7 +33,7 @@
       with_dict: "{{nodes}}"
       delegate_to: localhost
 
-    - name: Create a pool
+    - name: Delete pools
       tags:
         - pool 
       bigip_pool:
