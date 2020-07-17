@@ -41,6 +41,8 @@
           name: web02
         - host: 10.1.20.13
           name: web03
+        - host: 10.1.20.14
+          name: web04
       delegate_to: localhost
 
     - name: Delete a pool
